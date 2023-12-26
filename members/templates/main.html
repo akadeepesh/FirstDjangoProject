@@ -1,0 +1,18 @@
+{% extends 'master.html' %}
+
+{% block title %}
+    My Tennis Club
+{% endblock %}
+
+{% block content %}
+    <div class="main">
+        <h1> My Tennis Club </h1>
+        <h3> Members </h3>
+        <ul>
+            {%for x in var%}
+                    {{x.firstname}}
+            {%endfor%}
+        </ul>
+        <p> Check out all our <a href="members/">Members</a></p>
+    </div>
+{% endblock %}
